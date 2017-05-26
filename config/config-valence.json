@@ -1,0 +1,12 @@
+{
+ "matching": "Beam",
+ "alpha": 0.3,
+ "nodeValence": 1.0,
+ "nodeElement": 0,
+ "nodeElectronegativity": 0,
+ "nodePharmacophores": 0,
+ "edgeValence" : 1.0,
+ "nodeInsertDel" : 1.0,
+ "edgeInsertDel" : 1.0,
+ "fullConfiguration" : "ged-default.prop"
+}

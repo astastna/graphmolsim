@@ -1,0 +1,29 @@
+*** The properties of the matching ***
+
+Source graph set:	/Users/riesen/Documents/workspace/GraphMatchingToolkit/data/Fingerprint/small.cxl (5 graphs)
+Target graph set:	/Users/riesen/Documents/workspace/GraphMatchingToolkit/data/Fingerprint/small.cxl (5 graphs)
+
+Graph edit distance procedure:	Hungarian
+Edge mode:		undirected
+
+Cost for node deletion/insertion:	1.0
+Cost for edge deletion/insertion:	1.0
+
+Alpha weighting factor between node and edge costs:	0.2
+
+No attributes for nodes defined
+
+Edge Attribute 0:	angle;	Cost Function:	absolute;	Soft Factor:	1.0
+
+Individual node costs are added
+Individual edge costs are added
+(Combined node cost)^(1/1.0)
+(Combined edge cost)^(1/1.0)
+
+*** The similarity matrix tanh(-d) ***
+
+-0.00000,-0.99996,-0.99989,-1.00000,-0.99996
+-0.99996,-0.00000,-1.00000,-1.00000,-1.00000
+-0.99989,-1.00000,-0.00000,-1.00000,-0.97574
+-1.00000,-1.00000,-1.00000,-0.00000,-0.99999
+-0.99996,-1.00000,-0.97574,-0.99999,-0.00000

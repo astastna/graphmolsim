@@ -1,0 +1,32 @@
+*** The properties of the matching ***
+
+Source graph set:	/Users/riesen/Documents/workspace/GraphMatchingToolkit/data/Molecules/small.cxl (5 graphs)
+Target graph set:	/Users/riesen/Documents/workspace/GraphMatchingToolkit/data/Molecules/small.cxl (5 graphs)
+
+Graph edit distance procedure:	Beam
+s = 10
+
+Edge mode:		undirected
+
+Cost for node deletion/insertion:	3.0
+Cost for edge deletion/insertion:	3.0
+
+Alpha weighting factor between node and edge costs:	0.8
+
+Node attribute 0:	chem;	Cost function:	squared;	Soft factor:	1.0
+Node attribute 1:	charge;	Cost function:	sed;	Soft factor:	0.3
+
+Edge Attribute 0:	valence;	Cost Function:	discrete;	Soft Factor:	1.0
+
+Individual node costs are added
+Individual edge costs are added
+(Combined node cost)^(1/1.0)
+(Combined edge cost)^(1/1.0)
+
+*** The similarity matrix exp(-d) ***
+
+1.00000,0.00050,0.00000,0.00000,0.00000
+0.00003,1.00000,0.00000,0.00000,0.00000
+0.00000,0.00000,1.00000,0.00000,0.00001
+0.00000,0.00000,0.00000,1.00000,0.00000
+0.00000,0.00000,0.00001,0.00001,1.00000

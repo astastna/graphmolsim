@@ -1,0 +1,29 @@
+*** The properties of the matching ***
+
+Source graph set:	/Users/riesen/Documents/workspace/GraphMatchingToolkit/data/Molecules/small.cxl (5 graphs)
+Target graph set:	/Users/riesen/Documents/workspace/GraphMatchingToolkit/data/Molecules/small.cxl (5 graphs)
+
+Graph edit distance procedure:	AStar
+Edge mode:		undirected
+
+Cost for node deletion/insertion:	3.0
+Cost for edge deletion/insertion:	3.0
+
+Alpha weighting factor between node and edge costs:	0.55
+
+Node attribute 0:	chem;	Cost function:	discrete;	mu = 0.3 nu = 2.0;	Soft factor:	1.0
+
+Edge Attribute 0:	valence;	Cost Function:	discrete;	Soft Factor:	1.0
+
+Individual node costs are multiplied
+Individual edge costs are added
+(Combined node cost)^(1/3.0)
+(Combined edge cost)^(1/1.0)
+
+*** The distance matrix ***
+
+0.00000,4.35000,13.35000,16.35000,13.35000
+4.35000,0.00000,9.00000,12.00000,9.00000
+13.35000,9.00000,0.00000,5.70000,2.70000
+16.35000,12.00000,5.70000,0.00000,3.00000
+13.35000,9.00000,2.70000,3.00000,0.00000

@@ -1,0 +1,154 @@
+### 	:::::::::::::::::::::: IMPORTANT INFORMATION :::::::::::::::::::::::::::::::	#
+#
+#	consult the following website (and the corresponding paper) for 
+# 	more detailed information about the individual parameters and 
+#	their meanings:
+#	
+#	http://www.fhnw.ch/wirtschaft/iwi/gmt
+#
+### 	:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 	#
+
+
+
+#########################################################################################
+# 	source and target graph set, pathes to the graph and result folder		#
+#########################################################################################
+source=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+target=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+path=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+result=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+
+#########################################################################################
+# 	graph matching paradigm (possible choices are: AStar, Beam, Hungarian, VJ)	#
+# 	if "Beam" is chosen, maximum number of open paths s has to be defined		#
+#########################################################################################
+matching=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+s=20
+adj=best
+class=1.0
+
+#########################################################################################
+# 	cost for node/edge deletions/insertions (both cost values have to be > 0)	#
+#########################################################################################
+node=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+edge=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+
+#########################################################################################
+# 	number of node attributes and the individual names of these attributes		#
+#########################################################################################
+numOfNodeAttr=4
+nodeAttr0=valence
+nodeAttr1=symbol
+nodeAttr2=electronegativity
+nodeAttr3=pharmacophores
+
+#########################################################################################
+# 	cost function type per individual node attribute 				#
+#	(possible choices are: squared, absolute, discrete, sed)			#
+# 	if cost-function=discrete for node attribute i: nodeCostMui and nodeCostNui	# 
+#	(non-negative real values) have to be additionally defined 			#
+#########################################################################################
+nodeCostType0=absolute
+nodeCostType1=given
+nodeCostType2=absolute
+nodeCostType3=class
+
+#########################################################################################
+# 	weighting parameters per individual node attribute 				#
+#	(min=0, max=1.0; default = 1.0)							#
+#########################################################################################
+nodeAttr0Importance=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+nodeAttr1Importance=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+nodeAttr2Importance=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+nodeAttr3Importance=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+
+#########################################################################################
+# 	individual node costs are added (multiplyNodeCosts=0) or 			#
+#	multiplied (multiplyNodeCosts=1)						#
+#	p-th root is extracted from the combined node cost 				#
+#########################################################################################
+multiplyNodeCosts=0
+pNode=1
+
+
+#########################################################################################
+# 	edges are directed (=0) or undirected (=1)					#
+#########################################################################################
+undirected=1
+
+
+#########################################################################################
+# 	number of edge attributes and the individual names of these attributes		#
+#########################################################################################
+numOfEdgeAttr=1
+edgeAttr0=valence
+
+
+#########################################################################################
+# 	cost function type per individual edge attribute 				#
+#	(possible choices are: squared, absolute, discrete, sed)			#
+# 	if cost-function=discrete for edge attribute i: nodeCostMui and nodeCostNui	# 
+#	(non-negative real values) have to be additionally defined 			#
+#########################################################################################
+edgeCostType0=absolute
+
+
+#########################################################################################
+# 	weighting parameters per individual edge attribute 				#
+#	(min=0, max=1.0; default = 1.0)							#
+#########################################################################################
+edgeAttr0Importance=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+
+#########################################################################################
+# 	individual edge costs are added (multiplyEdgeCosts=0) or 			#
+#	multiplied (multiplyEdgeCosts=1)						#
+#	p-th root is extracted from the combined edge cost 				#
+#########################################################################################
+multiplyEdgeCosts=0
+pEdge=1
+
+
+#########################################################################################
+# 	alpha weights the node and edge costs:						#
+#	alpha * nodeCost; (1-alpha) * edgeCost
+#########################################################################################
+alpha=DON'T WRITE ANYTHING IN HERE,THIS WILL BE AUTOMATICALLY OVERWRITTEN
+
+
+#########################################################################################
+# 	logging options on the console							#
+#########################################################################################
+outputGraphs=0
+outputEditpath=0
+outputCostMatrix=0
+outputMatching=1
+
+
+#########################################################################################
+# 	build similarities from distances or not (possible choices are 0,1,2,3,4)	#						
+#########################################################################################
+simKernel=0
+
+
+#########################################################################################
+#       cost matrix for different node0, labels
+#
+#########################################################################################
+differentAtoms=C,N,Br,O,S,Cl,F,P,I,Si,As,Hg,Au,Fe,Se,Ga
+atomC=0,1,3,1,1,3,3,1,3,1,2,3,3,3,3,1
+atomN=1,0,3,1,1,3,3,1,3,1,2,3,3,3,3,1
+atomBr=3,3,0,3,3,1,1,3,1,3,3,3,3,3,3
+atomO=1,1,3,0,1,3,3,1,3,1,2,3,3,3,3,1
+atomS=1,1,3,1,0,3,3,1,3,1,2,3,3,3,3,1
+atomCl=3,3,1,3,3,0,1,3,1,3,3,3,3,3,3
+atomF=3,3,1,3,3,1,0,3,1,3,3,3,3,3,3
+atomP=1,1,3,1,1,3,3,0,3,1,2,3,3,3,3,1
+atomI=3,3,1,3,3,1,1,3,0,3,3,3,3,3,3
+atomSi=1,1,3,1,1,3,3,1,3,0,2,3,3,3,3,1
+atomAs=2,2,3,2,2,3,3,2,3,1,0,3,3,3,2
+atomHg=3,3,3,3,3,3,3,3,3,3,3,0,1,1,3
+atomAu=3,3,3,3,3,3,3,3,3,3,3,1,0,1,3
+atomFe=3,3,3,3,3,3,3,3,3,3,3,1,1,0,3
+atomSe=1,1,3,1,1,3,3,1,3,1,2,3,3,3,3,0
+atomGa=3,3,3,3,3,3,3,3,3,3,3,2,2,2,3
+

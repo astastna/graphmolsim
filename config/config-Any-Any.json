@@ -1,0 +1,8 @@
+{
+ "atomCompare": "CompareAny",
+ "bondCompare": "CompareAny",
+ "maximizeBonds": true,
+ "matchValences": false,
+ "ringMatchesRingOnly": false,
+ "completeRingsOnly": false
+}
