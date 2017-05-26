@@ -18,8 +18,11 @@ Datasets
 --------
 The input data can be downloaded from these addresses:
 http://siret.ms.mff.cuni.cz/skoda/datasets/8.0-8.5.zip
+
 http://siret.ms.mff.cuni.cz/skoda/datasets/8.5-9.0.zip
+
 http://siret.ms.mff.cuni.cz/skoda/datasets/9.0-9.5.zip
+
 http://siret.ms.mff.cuni.cz/skoda/datasets/9.8-1.0.zip
 The .zip files have to be saved and upacked in the same directory as the scripts.
 
